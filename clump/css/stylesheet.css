@@ -1,0 +1,68 @@
+.title {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    font-family: 'Fredoka One', cursive;
+    font-size: 5em;
+    color: #fff;
+	text-shadow: 0px 3px 0px #999, 0px 4px 0px #888, 0px 5px 0px #777, 0px 6px 0px #666, 0px 7px 0px #555, 0px 8px 0px #444, 0px 9px 0px #333, 0px 10px 15px #1f1f1f;
+}
+
+.container {
+    max-width: 1400px;
+}
+
+.col {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card {
+    max-width: 216px;
+    width: 216px;
+    margin: auto;
+    box-shadow: 2px 2px 20px #212121;
+    border: 6px solid rgb(226, 226, 226);
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.btn-outline-primary {
+    margin-top: 10px;
+}
+
+.btn-outline-danger {
+    margin-top: 10px;
+    float: right;
+}
+
+.btn-outline-success {
+    margin-top: 20px;
+}
+
+.divider {
+    height: 1px;
+    width: 170px;
+    border-color: rgb(201, 201, 201);
+    border-style: dashed;
+    border-width: 1px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h6 {
+    color: rgb(162, 169, 175);
+    margin-top: 70px;
+    margin-bottom: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 1px 1px 6px #1f1f1f;
+}
+
+a {
+    color: rgb(162, 169, 175);
+    text-decoration: underline;
+}
