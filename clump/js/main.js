@@ -11,10 +11,6 @@ function CardObject (cardObjectId, image, title, description, url, source, loveV
     this.hateValue = hateValue;
 }
 
-
-
-
-
 $.ajax({
 
     url:'https://newsapi.org/v2/top-headlines?country=us&pageSize=36&apiKey=48ffb7597ebd4173945c6ad0a0bc90a3',
@@ -30,12 +26,43 @@ $.ajax({
             cardObjectId++;
         });
 
-        console.log(cardArray);
+        displayResults();
 
+
+        
     
 
     },
+
 });
+
+//console.log(cardArray[0].image);
+
+
+function displayResults() {
+
+    var myDiv = document.getElementById("test");
+
+    for (i = 0; i < cardArray.length; i++) {
+        console.log(cardArray[i].image)
+
+        var node = document.createElement("LI");
+        var textNode = document.createTextNode(cardArray[i].image);
+
+        node.appendChild(textNode);
+
+        myDiv.appendChild(node);
+    }
+
+    //myDiv.appendChild()
+
+    
+}
+
+
+
+
+
 
 
 
