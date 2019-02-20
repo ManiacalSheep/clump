@@ -30,44 +30,14 @@ $.ajax({
 
         console.log(cardArray);
 
-        numberOfRows = cardArray.length / 6;
+        numberOfRows = cardArray.length / 4;
 
         populateContainer(numberOfRows);
 
         renderRows(numberOfRows);
-
-        //displayResults();
-        
-    
-
     },
 
 });
-
-//console.log(cardArray[0].image);
-
-
-/*
-function displayResults() {
-
-    var myDiv = document.getElementById("test");
-
-    for (i = 0; i < cardArray.length; i++) {
-        console.log(cardArray[i].image)
-
-        var node = document.createElement("LI");
-        var textNode = document.createTextNode(cardArray[i].image);
-
-        node.appendChild(textNode);
-
-        myDiv.appendChild(node);
-    }
-
-    //myDiv.appendChild()
-
-    
-}
-*/
 
 function populateContainer(numberOfRows) {
 
@@ -86,15 +56,13 @@ function renderRows(numberOfRows) {
 
     for (i = 0; i < numberOfRows; i++) {
 
-        for (j = 0; j < 6; j++) {
+        for (j = 0; j < 4; j++) {
 
             renderCard(i, cardCounter);
 
             cardCounter += 1;
 
         }
-
-        cardCounter += 1;
 
     }
 }
@@ -136,6 +104,7 @@ function renderCard(i, cardCounter) {
     newSourceButton.type = "button";
     newSourceButton.className = "btn btn-outline-success btn-block";
     newSourceButton.innerHTML = "Source";
+    newSourceButton.onclick = function() {viewSource(cardCounter)};
     newCardBody.appendChild(newSourceButton);
 
     var newLoveButton = document.createElement("BUTTON");
@@ -154,25 +123,16 @@ function renderCard(i, cardCounter) {
 
 }
 
+function viewSource(cardCounter) {
+    location.href = cardArray[cardCounter].url;
+}
 
-
-
-
-var loveCounter = 0;
-var hateCounter = 0;
-
-function incrementLove() {
-    loveCounter += 1;
-    return "Love " + loveCounter;
+/*function incrementLove(newLoveButton) {
+    newLoveButton.innerHTML = "Love" + loveValue;
 }
 
 function incrementHate() {
     hateCounter += 1;
     return hateCounter + " Hate";
 }
-
-function cardWriteTest() {
-
-    return '<div class="card"> <img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="card-img-top" alt="..."> <div class="card-body"> <h5 class="card-title">Really looong card title test!</h5> Lorem ipsum dolor sit amet, consectetur adipiscing eluna aliqua. olor <div class="divider"></div> <button type="button" class="btn btn-outline-success btn-block">Source</button> <button onclick="this.innerHTML = incrementLove()" type="button" class="btn btn-outline-primary">Love 0</button> <button onclick="this.innerHTML = incrementHate()" type="button" class="btn btn-outline-danger">0 Hate</button> </div> </div>';
-}
-
+*/

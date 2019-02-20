@@ -4,22 +4,22 @@
     font-family: 'Fredoka One', cursive;
     font-size: 5em;
     color: #fff;
-	text-shadow: 0px 3px 0px #999, 0px 4px 0px #888, 0px 5px 0px #777, 0px 6px 0px #666, 0px 7px 0px #555, 0px 8px 0px #444, 0px 9px 0px #333, 0px 10px 15px #1f1f1f;
+	text-shadow: 0px 4px 0px #999, 0px 5px 0px #888, 0px 6px 0px #777, 0px 7px 0px #666, 0px 8px 0px #555, 0px 9px 0px #444, 0px 10px 0px #333, 0px 11px 15px #1f1f1f;
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1366px;
 }
 
 .col {
     padding: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-left: 11px;
+    margin-right: 11px;
 }
 
 .card {
-    max-width: 216px;
-    width: 216px;
     margin: auto;
     box-shadow: 2px 2px 20px #212121;
     border: 6px solid rgb(226, 226, 226);
@@ -44,7 +44,6 @@
 
 .divider {
     height: 1px;
-    width: 170px;
     border-color: rgb(201, 201, 201);
     border-style: dashed;
     border-width: 1px;
